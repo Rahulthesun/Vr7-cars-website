@@ -3,6 +3,7 @@
   <head>
     <title>Vr7Cars</title>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -34,6 +35,19 @@
         <a href="#catalogue">Inventory</a>
         <a href="#sell-car">Sell Your Car</a>
       </div>
+      <a href="#" class="navbar-menu"><i class="fa-solid fa-bars"></i></a>
+      <div class="drawer-menu">
+        <nav>
+            <ul>
+                <li><a href="#" class="navbar-menu"><i class="fa-solid fa-bars"></i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+      </div>  
+      
     </div>
 
     <section id="headline">
@@ -191,6 +205,35 @@
 
       setInterval(swapImage, 2000);
     </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const navbarMenu = document.querySelector('.navbar-menu');
+          const drawerMenu = document.querySelector('.drawer-menu');
+
+          navbarMenu.addEventListener('click', function(event) {
+              event.preventDefault();
+              drawerMenu.classList.toggle('open');
+          });
+
+          drawerMenu.addEventListener('click', function(event) {
+              // Close the menu when a link is clicked
+              if (event.target.tagName === 'A') {
+                  drawerMenu.classList.remove('open');
+              }
+          });
+        document.addEventListener('click', function(event) {
+            if (!navbarMenu.contains(event.target) && !drawerMenu.contains(event.target)) {
+                drawerMenu.classList.remove('open');
+            }
+        });
+
+        // Close the drawer when the menu button inside the drawer is clicked
+        drawerMenuButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            drawerMenu.classList.remove('open');
+        });
+      });
+
+    </script>
   </body>
 </html>
-
