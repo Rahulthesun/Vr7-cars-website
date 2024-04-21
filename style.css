@@ -192,12 +192,12 @@ body {
 
 .quote-button {
   width: 28%;
-  height: 80px;
+  height: auto;
   border-radius: 20px;
   border: 3px solid black;
   opacity: 0px;
   font-family: Inter;
-  font-size: 2.5vw;
+  font-size: 4vw;
   font-weight: 700;
   line-height: 47.52px;
   letter-spacing: -0.04em;
@@ -232,10 +232,11 @@ body {
 
 .comic-button {
   width: 30%;
+  height: auto;
   margin: 1% auto;
   display: inline-block;
   padding: 10px 20px;
-  font-size: 30px;
+  font-size: 3vw;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
@@ -383,15 +384,84 @@ hr {
   font-size: 1.5vw;
   margin-bottom: 3%;
 }
-
+.navbar-menu {
+  display: none;
+  
+}
 
 
 @media (max-width: 600px) {
   .logo img {
-    width: 10%;
+    width: 40%;
     height: auto;
+  }
+
+  .navbar-links a {
+    display: none;
+  }
+
+  .headline-text {
+    width: 100%;
+    font-size: 5.5vw;
   }
   .topbar-flex {
     justify-content: center;
   }
+
+  .quote-button {
+    width: 60%;
+  }
+
+  .navbar-menu {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 5vw;
+  }
+}
+
+.drawer-menu {
+    position: fixed;
+    top: 0;
+    left: -400px; /* Initially hide the menu */
+    width: 400px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.3s ease;
+    z-index: 1000; /* Ensure the menu is above other elements */
+}
+
+.drawer-menu.open {
+    left: 0;
+}
+
+.drawer-menu nav {
+    padding: 20px;
+    margin: 5% auto;
+  align-items: center;
+}
+
+.drawer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.drawer-menu li {
+    margin-bottom: 50px;
+}
+
+.drawer-menu a {
+    font-size: 5vw;
+    color: #000000;
+    text-decoration: none;
+    text-align: left;
+}
+
+.content {
+    padding: 20px;
+}
+
+/* Hide default scrollbar for the menu */
+.drawer-menu::-webkit-scrollbar {
+    display: none;
 }
