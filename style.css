@@ -59,7 +59,11 @@ body {
   margin: auto 20px
 }
 
-#headline {}
+
+
+#call-button {
+  margin: 2% 5%;
+}
 
 .headline-flex {
   display: flex;
@@ -197,7 +201,7 @@ body {
   border: 3px solid black;
   opacity: 0px;
   font-family: Inter;
-  font-size: 4vw;
+  font-size: 2.5vw;
   font-weight: 700;
   line-height: 47.52px;
   letter-spacing: -0.04em;
@@ -330,7 +334,7 @@ hr {
 }
 
 .footer-info {
-  width: 40%;
+  width: 60%;
 }
 
 .footer-info img {
@@ -346,8 +350,8 @@ hr {
 
 .footer-bold p {
   font-weight: 700;
-  font-size: 1.8vw;
-  line-height: 36px;
+  font-size: 1.5vw;
+  line-height: 15px;
   text-align: left;
   color: #FFFFFF;
 
@@ -365,7 +369,7 @@ hr {
 .footer-links a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 3vw;
   margin: auto 20px;
   margin-top: 8px;
   margin-bottom: 0;
@@ -410,6 +414,7 @@ hr {
 
   .quote-button {
     width: 60%;
+    font-size: 4.5vw;
   }
 
   .navbar-menu {
@@ -417,6 +422,10 @@ hr {
     text-decoration: none;
     color: black;
     font-size: 5vw;
+  }
+
+  #main li {
+    font-size: 4vw;
   }
 }
 
@@ -464,4 +473,42 @@ hr {
 /* Hide default scrollbar for the menu */
 .drawer-menu::-webkit-scrollbar {
     display: none;
+}
+
+
+
+#main h1 {
+  font-size: 5vw;
+  text-align: center; 
+  margin-bottom: 0;
+}
+
+#main h3 {
+  font-size: 1.5vw;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#main ul {
+  width: 70%;
+  margin: 5% auto;
+  list-style-type: none;
+  padding: 0;
+  font-size: 2vw;
+}
+
+#footer ul {
+  list-style-type:none;
+  text-align: left;
+  font-size: 0.5vw;
+  margin:0;
+  padding: 0;
+}
+
+.address p{
+  font-size: 1.3vw;
+  font-weight: 700;
+  margin-bottom: 1px;
 }
