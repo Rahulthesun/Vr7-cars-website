@@ -460,7 +460,7 @@ hr {
 }
 
 .drawer-menu a {
-    font-size: 5vw;
+    font-size: 4vw;
     color: #000000;
     text-decoration: none;
     text-align: left;
@@ -502,7 +502,7 @@ hr {
 #footer ul {
   list-style-type:none;
   text-align: left;
-  font-size: 0.5vw;
+  font-size: 0.1vw;
   margin:0;
   padding: 0;
 }
